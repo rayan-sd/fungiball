@@ -1,0 +1,105 @@
+
+.swiper {
+    width: 70%;
+    height: 100%;
+    margin-left: 0;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .slider-wrapper {
+    align-items: center;
+  }
+
+  .swiper-button-next {
+    top : 30px !important;
+    right: 40% !important;
+    color:#FFFFFF !important;
+}
+
+.swiper-button-prev {
+    top : 30px !important;
+    left: 40% !important;
+    color:#FFFFFF !important;
+}
+
+// .swiper-button-prev {
+//     top: 10px;
+//   }
+  
+
+  .swiper-button-prev {
+    top:10px
+  }
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+  @media only screen and (max-width: 900px) {
+    .swiper {
+      width: 80%;
+      height: 100%;
+      margin-left: 0;
+    }
+    .swiper-button-next {
+      top : 40px !important;
+      right: 42% !important;
+      color:#FFFFFF !important;
+      font-weight: bold;
+  }
+  
+  .swiper-button-prev {
+      font-weight: bold;
+      top : 40px !important;
+      left: 42% !important;
+      color:#FFFFFF !important;
+  }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+    }
+
+    .swiper-button-next {
+      top : 40px !important;
+      right: 42% !important;
+      color:#FFFFFF !important;
+      font-weight: bold;
+  }
+  
+  .swiper-button-prev {
+      font-weight: bold;
+      top : 40px !important;
+      left: 42% !important;
+      color:#FFFFFF !important;
+  }
+  .swiper-button-next:after {
+    font-size: 25px !important;
+    font-weight: bold;
+  }
+
+  .swiper-button-prev:after {
+    font-weight: bold;
+    font-size: 25px !important;
+  }
+}

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #030025;
+  /* background: linear-gradient(180deg, #4804FD 0%, #7902FA 100%); */
+  overflow-x: hidden;
+}
+
+.App {
+  overflow: hidden;
+}
+/* @font-face {
+  font-family: "Söhne Breit Test";
+  src: url("./Font/BreitTest.ttf") format("truetype"),
+ }
+
+ @font-face {
+  font-family: "Nordique Pro";
+  src: url("./Font/NordiquePro-Regular.ttf") format("truetype"),
+} */
+
+a {
+  text-decoration: none;
+}
+

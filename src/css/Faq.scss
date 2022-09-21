@@ -1,0 +1,404 @@
+.Faq {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // gap: 150px;
+    z-index: 0;
+    margin-top: 15vh;
+    padding-bottom: 100px;
+
+    .container-Faq {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        gap: 15vw;
+
+        .left-faq {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            // gap: 100px;
+
+            .col1 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 30%;
+
+                h3 {
+                    font-family: 'Söhne Breit Test';
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 1.25px;
+                    text-transform: uppercase;
+                    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                    background: linear-gradient(92.61deg, #FF5836 0%, #FC6E51 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+
+                h2 {
+                    font-family: 'Söhne Breit Test1';
+                    font-size: 44px;
+                    line-height: 50px;
+                    letter-spacing: -0.015em;
+                    font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
+                    color: #FFFFFF;
+
+                    span {
+                        font-family: 'Söhne Breit Test1';
+                        background: linear-gradient(0deg, #FF5836, #FF5836),
+                        linear-gradient(0deg, #FFFFFF, #FFFFFF);                        
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+            }
+
+            .col2 {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                span {
+                    font-family: 'Nordique Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                    color: #DFDFDF;
+                }
+                a {
+                    font-family: 'Nordique Pro';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+                    text-decoration-line: underline;
+                    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                    color: #FF5836;
+                }
+            }
+        }
+
+        .right-faq {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            // flex: 0;
+
+            .col-social-faq {
+                display: none;
+            }
+            
+            .accordium-item:after {
+                content: "";
+                // background: #FFFFFF;
+                position: absolute;
+                bottom: 0;
+                left: 1%;
+                // height: 50%;
+                width: 98%;
+                border-bottom: 1px solid #FFFFFF;
+              }
+
+            .accordium-item {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                // max-width: 640px;
+                max-width: 100%;
+                height: 104px;
+                // align-items: center;
+                justify-content: center;
+                padding: 20px;
+                position: relative;
+
+                .container-accordium {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 15px;
+                    color: #FFFFFF;
+                }
+
+                a {
+                    font-family: 'Söhne Breit Test-regular';
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.015em;
+                    font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
+                    color: #FFFFFF;
+                }
+                .i-remove {
+                    display: block;
+                    width: 30.72px;
+                    height: 30.94px;
+                }
+                .i-active {
+                    display: none;
+                }
+
+                .answer {
+                    font-family: 'Nordique Pro';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    max-height: 0;
+                    overflow: hidden;
+                    position: relative;
+                    // transition: max-height 350ms;
+                }
+            }
+
+            .accordium-item-active {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                // max-width: 640px;
+                max-width: 100%;
+                // height: 104px;
+
+                background-color: #FFFFFF;
+                height: auto;
+                border-radius: 6px;
+                // align-items: center;
+                justify-content: center;
+                padding: 20px;
+                border-bottom: 1px solid #FFFFFF;
+
+                .container-accordium {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 15px;
+                    color: #000000;
+                }
+
+                a {
+                    // display: flex;
+                    // justify-content: space-between;
+                    // align-items: center;
+                    font-family: 'Söhne Breit Test-regular';
+                    font-weight: bold;
+                    // gap: 15px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.015em;
+                    font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
+                    // color: #FFFFFF;
+                    color: #000000;
+                }
+                .i-remove {
+                    display: none;
+                }
+
+                .i-active {
+                    display: block;
+                    width: 30.72px;
+                    height: 30.94px;
+                }
+
+                .answer {
+                    font-family: 'Nordique Pro';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    // color: #FFFFFF;
+                    color: #3C4353;
+                    max-height: 20rem;
+                    overflow: hidden;
+                    position: relative;
+                    transition: max-height 650ms;
+                }
+            }
+        }
+    }
+    .blur-faq {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        bottom: -100px;
+        right: -50px;
+        background: #FF6B00;
+        // transform: rotate(130deg);
+        border-radius: 5000px;
+        filter: blur(100.5px);
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .Faq {
+        margin-top: 5vh;
+        .container-Faq {
+            width: 90%;
+            gap: 5vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Faq {
+        .container-Faq {
+            flex-direction: column;
+            width: 90%;
+            gap: 5vw;
+
+            .left-faq {
+                .col1 {
+                    width: 50%;
+                }
+                .col2 {
+                    display: none;
+                }
+            }
+            .right-faq {
+                .col-social-faq {
+                    display: unset;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+
+                    span {
+                        font-family: 'Nordique Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 24px;
+                        display: flex;
+                        align-items: center;
+                        font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                        color: #DFDFDF;
+                    }
+
+                    a {
+                        font-family: 'Nordique Pro';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 28px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration-line: underline;
+                        font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                        color: #FF5836;
+                    }
+                }
+            }
+        }
+        .blur-faq {
+            position: absolute;
+            width: 300px;
+            height: 150px;
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: #fd49256c;
+            // transform: rotate(130deg);
+            border-radius: 5000px;
+            filter: blur(100.5px);
+            -webkit-filter: blur(60.5px);
+            z-index: -1;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Faq {
+        padding-bottom: 65px;
+        margin-top: 0;
+        .container-Faq {
+            flex-direction: column;
+            width: 90%;
+            gap: 50px;
+
+            .left-faq {
+                .col1 {
+                    width: 50%;
+                    gap: 10px;
+
+                    h2 {
+                        font-size: 35px;
+                        line-height: 32px;
+                    }
+                }
+                .col2 {
+                    display: none;
+                }
+            }
+            .right-faq {
+                .col-social-faq {
+                    display: unset;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+
+                    span {
+                        font-family: 'Nordique Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 24px;
+                        display: flex;
+                        align-items: center;
+                        font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                        color: #DFDFDF;
+                    }
+
+                    a {
+                        font-family: 'Nordique Pro';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 28px;
+                        display: flex;
+                        align-items: center;
+                        text-decoration-line: underline;
+                        font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
+                        color: #FF5836;
+                    }
+                }
+
+                .accordium-item {
+                    height: auto;
+                    a {
+                        text-transform: lowercase;
+                    }
+                }
+                .accordium-item-active {
+                    height: auto;
+                    a {
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+    }
+}
