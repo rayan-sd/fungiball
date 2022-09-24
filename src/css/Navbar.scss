@@ -26,7 +26,14 @@
 
         .right-text {
             display: flex;
-            gap: 20px;
+            // justify-content: space-between;
+            gap: 100px;
+            align-items: center;
+
+            .mnu-left {
+                display: flex;
+                gap: 20px;
+            }
                 a {
                     font-family: 'Nordique Pro';
                     font-style: normal;
@@ -44,6 +51,33 @@
                 .blur-nav {
                     display: none;
                 }        
+        }
+        .social-nav {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                border: 1px solid #FFFFFF;
+                border-radius: 50%;
+                padding: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    color: #FFFFFF;
+                }
+            }
+
+            a:hover {
+                border: 1px solid orange;
+                .icon {
+                    color: #FF6F07;
+                }
+            }
         }
     }
 }
@@ -114,9 +148,9 @@
                 display: flex;
                 transition: all 3s;
                 justify-content: center;
-                flex-direction: column;
                 align-items: center;
-                gap: 20px;
+                flex-direction: column;
+                gap: 35px;
                 position: fixed;
                 top: 8vh;
                 right: 0px;
@@ -126,6 +160,41 @@
                 border-bottom: 1px solid #FF6B00;
                 border-bottom-left-radius: 5%;
                 padding-bottom: 20px;
+
+                .mnu-left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .social-nav {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+        
+                    a {
+                        border: 1px solid #FFFFFF;
+                        border-radius: 50%;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .icon {
+                            width: 12px;
+                            height: 12px;
+                            color: #FFFFFF;
+                        }
+                    }
+        
+                    a:hover {
+                        border: 1px solid orange;
+                        .icon {
+                            color: #FF6F07;
+                        }
+                    }
+                }
                     a {
                         padding: 10px 0px;
                         font-family: 'Nordique Pro';
@@ -176,7 +245,7 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                gap: 20px;
+                gap: 28px;
                 position: fixed;
                 top: 60px;
                 right: 0px;

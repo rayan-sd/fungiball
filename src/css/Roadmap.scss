@@ -106,18 +106,18 @@
                 }
     
                 .counter {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  
-                    font-family: 'Söhne Breit Test2';
-                    font-size: 100px;
-                    line-height: 0;
                     // display: flex;
                     // justify-content: center;
                     // align-items: center;
-                    // gap: 20px;
-                    // width: 100%;
+                  
+                    // font-family: 'Söhne Breit Test2';
+                    // font-size: 100px;
+                    // line-height: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    width: 100%;
                     // user-select: none;
                 }
 

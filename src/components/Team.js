@@ -6,10 +6,10 @@ import jean from "./../img/TEAM/jean.png"
 import vasselin from "./../img/TEAM/vasselin1.png"
 import alexandre from "./../img/TEAM/alexandre1.png"
 import antoine from "./../img/TEAM/antoine1.png"
-import louis from "./../img/TEAM/louis.png"
 import guillaume from "./../img/TEAM/guillaume.png"
-import nills from "./../img/TEAM/nills.png"
 import pierre from "./../img/TEAM/pierre.png"
+import designer from "./../img/TEAM/designer.png"
+import vms from "./../img/TEAM/vms.png"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import './../css/slider.scss'
@@ -22,13 +22,15 @@ import "swiper/css/navigation";
 
 
 const tab = [
-    {name : "Victor Molette" ,poste : "Co-Founder & CEO", img : victor},
-    {name : "Jean Matias" ,poste : "Co-Founder & COO", img : jean},
-    {name : "E. Roger-Vasselin" ,poste : "Tennis Player", img : vasselin},
-    {name : "Antoine Pruvot" ,poste : "CFO & Advisor", img : antoine},
-    {name : "Alexandre Thevenet" ,poste : "Communication Director", img : alexandre},
-    {name : "Pierre Brill" ,poste : "Crypto Broker", img : guillaume},
-    {name : "Guillaume Franc" ,poste : "Advisor", img : pierre},
+    {name : "Victor Molette" ,poste : "Co-Founder & CEO", img : victor, twitter: "https://twitter.com/VictorMolette?s=20&t=UEoz5MEklIy_MYdOtKMWbw", Instagram: "https://www.instagram.com/victormolette/", Linkedin: "https://www.linkedin.com/in/victormolette"},
+    {name : "Jean Matias" ,poste : "Co-Founder & COO", img : jean, twitter: "https://twitter.com/JeanMAT39740767", Instagram: "https://www.instagram.com/joao_gmts/", Linkedin: ""},
+    {name : "E. Roger-Vasselin" ,poste : "Tennis Player", img : vasselin, twitter: "", Instagram: "https://www.instagram.com/edouardrogervasselin/", Linkedin: ""},
+    {name : "Antoine Pruvot" ,poste : "CFO & Advisor", img : antoine, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/antoine-pruvot-7876b1113"},
+    {name : "Alexandre Thevenet" ,poste : "Communication Director", img : alexandre, twitter: "", Instagram: "", Linkedin: ""},
+    {name : "Pierre Brill" ,poste : "Crypto Broker", img : guillaume, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/pierre-brill-036448b9"},
+    {name : "Guillaume Franc" ,poste : "Advisor", img : pierre, twitter: "", Instagram: "", Linkedin: ""},
+    {name : "Lucka Ndaye" ,poste : "Designer", img : designer, twitter: "", Instagram: "https://www.instagram.com/luckandaye/", Linkedin: ""},
+    {name : "VMS" ,poste : "Web development agency", img : vms, twitter: "", Instagram: "", Linkedin: ""},
 ]
 
 
@@ -56,8 +58,8 @@ export default class Team extends React.Component {
                                 <p> Co-Founder & CEO</p>
                             </div>
                             <div className='social-box'>
-                                <a>LinkedIn</a>
-                                <a>Twitter</a>
+                                <a href='https://www.linkedin.com/in/victormolette'>LinkedIn</a>
+                                <a href='https://twitter.com/VictorMolette?s=20&t=UEoz5MEklIy_MYdOtKMWbw'>Twitter</a>
                             </div>
                         </div>
                         <div className='box-team'>
@@ -69,8 +71,8 @@ export default class Team extends React.Component {
                                 <p> Co-Founder & COO</p>
                             </div>
                             <div className='social-box'>
-                                <a href="#">LinkedIn</a>
-                                <a href="#">Twitter</a>
+                                <a href="https://www.instagram.com/joao_gmts/">Instagram</a>
+                                <a href="https://twitter.com/JeanMAT39740767">Twitter</a>
                             </div>
                         </div>
                     </div>
@@ -84,23 +86,23 @@ export default class Team extends React.Component {
                                 <p>Tennis Player</p>
                             </div>
                             <div className='social-box'>
-                                <a>LinkedIn</a>
+                                <a href='https://www.instagram.com/edouardrogervasselin/'>Instagram</a>
                                 <a>Twitter</a>
                             </div>
                         </div>
-                        {/* <div className='box-team'>
+                        <div className='box-team'>
                             <div className="box-img-team">
-                                <img alt='team1' src={louis}></img>
+                                <img alt='team1' src={designer}></img>
                             </div>
                             <div className='box-text-Team'>
-                                <h2>Louis Etienne</h2>
-                                <p>Advisor</p>
+                                <h2>Lucka Ndaye</h2>
+                                <p>Designer</p>
                             </div>
                             <div className='social-box'>
+                                <a href="https://www.instagram.com/luckandaye/">Instagram</a>
                                 <a href="#">LinkedIn</a>
-                                <a href="#">Twitter</a>
                             </div>
-                        </div> */}
+                        </div>
                         <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={antoine}></img>
@@ -110,7 +112,7 @@ export default class Team extends React.Component {
                                 <p>CFO & Advisor</p>
                             </div>
                             <div className='social-box'>
-                                <a>LinkedIn</a>
+                                <a href='https://www.linkedin.com/in/antoine-pruvot-7876b1113'>LinkedIn</a>
                                 <a>Twitter</a>
                             </div>
                         </div>
@@ -138,23 +140,23 @@ export default class Team extends React.Component {
                                 <p>Crypto Broker</p>
                             </div>
                             <div className='social-box'>
-                                <a>LinkedIn</a>
+                                <a href='https://www.linkedin.com/in/pierre-brill-036448b9'>LinkedIn</a>
                                 <a>Twitter</a>
                             </div>
                         </div>
-                        {/* <div className='box-team'>
+                        <div className='box-team'>
                             <div className="box-img-team">
-                                <img alt='team1' src={nills}></img>
+                                <img alt='vms' src={vms}></img>
                             </div>
                             <div className='box-text-Team'>
-                                <h2>Nils Tessier</h2>
-                                <p>CTO</p>
+                                <h2>Virtual Miracle Studio</h2>
+                                <p>Web development agency</p>
                             </div>
                             <div className='social-box'>
                                 <a href="#">LinkedIn</a>
                                 <a href="#">Twitter</a>
                             </div>
-                        </div> */}
+                        </div>
                         <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={guillaume}></img>
@@ -196,8 +198,11 @@ export default class Team extends React.Component {
                                             <p>{value.poste}</p>
                                         </div>
                                         <div className='social-box-mobile'>
-                                            <a>LinkedIn</a>
-                                            <a>Twitter</a>
+                                            <a href={value.Linkedin}>LinkedIn</a>
+                                            <a href={value.twitter}>Twitter</a>
+                                            <div>
+                                                <a href={value.Instagram}>Instagram</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>

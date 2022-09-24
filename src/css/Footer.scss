@@ -184,13 +184,16 @@
                             width: 12px;
                             height: 12px;
                         }
+                        .icon {
+                            width: 12px;
+                            height: 12px;
+                        }
                     }
 
                     a:hover {
                         border: 1px solid orange;
-                        img {
-                            filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-                            // filter: brightness(0%) sepia(1) hue-rotate(19.4deg  ) saturate(10.4%) brightness(0%);
+                        .icon {
+                            color: #FF6F07;
                         }
                     }
                 }
@@ -220,23 +223,23 @@
                 text-align: right;
                 text-transform: uppercase;
                 color: #FFFFFF;
-                text-decoration: underline;
-                text-decoration-color: #FF6B00;
                 // text-align: left;
-
+                
                 span {
                     font-weight: 700;
                 }
             }
             a:hover {
+                text-decoration: underline;
+                text-decoration-color: #FF6B00;
                     // color: #FF6B00;
-                    filter: drop-shadow(0px -3px 3px #FF6B00);
+                    // filter: drop-shadow(0px -3px 3px #FF6B00);
                     // background: linear-gradient(92.61deg, #FF5836 0%, #FFB8A9 100%);
                     // -webkit-background-clip: text;
                     // -webkit-text-fill-color: transparent;
                     // background-clip: text;
                     // text-fill-color: transparent;
-                    text-decoration-color: #FFFFFF;
+                    // text-decoration-color: #FFFFFF;
             }
 
         }
@@ -269,8 +272,20 @@
                     }
                 }
                 .box-t-middle {
-                    width: auto;
-                    gap: 80px;
+                    width: 100%;
+                    gap: 10px;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .box-footer {
+                        align-items: center;
+                        width: 100%;
+                        .box-text-midlle {
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
                 }
 
                 .box-t-right {
@@ -332,7 +347,7 @@
 
                 .box-t-middle {
                     width: auto;
-                    gap: 50px;
+                    gap: 10px;
                 }
 
                 .box-t-right {

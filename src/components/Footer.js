@@ -1,8 +1,7 @@
 import React from 'react'
 import "./../css/Footer.scss"
-import fb from './../img/fb.svg'
-import twitter from './../img/twitter.svg'
-import linkedin from './../img/linkedin.svg'
+import {BsTwitter, BsInstagram} from "react-icons/bs";
+import {FaDiscord} from "react-icons/fa";
 
 
 export default function Footer() {
@@ -44,23 +43,24 @@ export default function Footer() {
                         <div className='box-footer'>
                             {/* <h2>Section</h2> */}
                             <div className='box-text-midlle'>
+                            {/* <a onClick={e => {
+                                let hero = document.getElementById("Skills");
+                                e.preventDefault();  // Stop Page Reloading
+                                hero && hero.scrollIntoView({ behavior: "smooth" });
+                            }}> Skills</a> */}
+
                             <a onClick={e => {
-                                    let hero = document.getElementById("Skills");
-                                    e.preventDefault();  // Stop Page Reloading
-                                    hero && hero.scrollIntoView({ behavior: "smooth" });
-                                }}> Skills</a>
-                                <a onClick={e => {
-                                    let hero = document.getElementById("Team");
-                                    e.preventDefault();  // Stop Page Reloading
-                                    hero && hero.scrollIntoView({ behavior: "smooth" });
-                                }}> Fungi Team</a>
+                                let hero = document.getElementById("Team");
+                                e.preventDefault();  // Stop Page Reloading
+                                hero && hero.scrollIntoView({ behavior: "smooth" });
+                            }}> Fungi Team</a>
 
-                                <a onClick={e => {
-                                    let hero = document.getElementById("Faq");
-                                    e.preventDefault();  // Stop Page Reloading
-                                    hero && hero.scrollIntoView({ behavior: "smooth" });
-                                }}> FAQ</a>
-
+                            <a onClick={e => {
+                                let hero = document.getElementById("Faq");
+                                e.preventDefault();  // Stop Page Reloading
+                                hero && hero.scrollIntoView({ behavior: "smooth" });
+                            }}> FAQ</a>
+                            <a>White Paper coming soon</a>
                             </div>
                         </div>
                     </div>
@@ -68,9 +68,9 @@ export default function Footer() {
                         <div className='gp'>
                             <h2>Contact</h2>
                             <div className='contact-footer'>
-                                <a href=''><img alt='facebook' src={fb}></img></a>
-                                <a href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><img alt='twitter' src={twitter}></img></a>
-                                <a href='https://www.instagram.com/fungiball.io/'><img alt='linkedin' src={linkedin}></img></a>
+                                <a href='https://discord.gg/9cWQE4f3'><FaDiscord className='icon'/></a>
+                                <a href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><BsTwitter className='icon'/></a>
+                                <a href='https://www.instagram.com/fungiball.io/'><BsInstagram className='icon'/></a>
                             </div>
                         </div>
                         <a href="mailto: contact@astate.io">contact@astate.io</a>

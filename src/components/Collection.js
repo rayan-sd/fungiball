@@ -1,5 +1,6 @@
 import React from 'react'
-import Camilo from "./../img/Camilo1.png"
+// import Camilo from "./../img/Camilo1.png"
+import gif from "./../img/gi.gif"
 import CamiloPlatine from "./../img/CamiloPlatine1.png"
 import edouard from './../img/Edouard1.png'
 import Misaki from './../img/Misaki1.png'
@@ -22,7 +23,7 @@ export default function Collection() {
             <div className='blur-container'></div>
                 <div className='top'>
                     <img alt='edouard' src={edouard}></img>
-                    <img alt='misaki' className='middle-top' src={Misaki}></img>
+                    <img alt='misaki' className='middle-top' src={gif}></img>
                     <img alt='unknown' src={Unknown}></img>
                 </div>
                 <div className='middle'>
@@ -30,7 +31,7 @@ export default function Collection() {
                 </div>
                 <div className='bottom'>
                     <img alt='camiloPlatine' src={CamiloPlatine}></img>
-                    <img alt='camilo' src={Camilo}></img>
+                    <img alt='gif' src={Misaki}></img>
                 </div>
             </div>
         </section>

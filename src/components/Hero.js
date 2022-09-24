@@ -1,5 +1,5 @@
 import React from 'react'
-import edouard from './../img/Edouard.png'
+import edouard from './../img/Camilo.png'
 import "./../css/Hero.scss"
 import trophy from "./../img/trophy.png"
 import starhero from "./../img/hero-stars.png"

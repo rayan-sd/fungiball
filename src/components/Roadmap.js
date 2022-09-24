@@ -14,7 +14,7 @@ export default function Roadmap() {
       setActive(!isActive);
     };
 
-    setTimeout(settime, 400);
+    setTimeout(settime, 200);
     function settime() {
         if (scroll) {
             setTime(time + 1)

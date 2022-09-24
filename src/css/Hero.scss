@@ -468,8 +468,10 @@
 
                 img {
                     width: 70vw;
-                    filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
-                    -webkit-filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
+                    filter: drop-shadow(-1rem 0rem 4rem #cec9c771) drop-shadow(1rem 0rem 5rem #ff5836);
+                        -webkit-filter: drop-shadow(-2rem 0rem 2rem #cec9c771) drop-shadow(1rem 0rem 3rem #ff5836);
+                    // filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
+                    // -webkit-filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
                 }
             }
         }
@@ -500,8 +502,8 @@
                     img {
                         width: 50vw;
                         filter: drop-shadow(-1rem 0rem 4rem #cec9c771) drop-shadow(1rem 0rem 5rem #ff5836);
+                        -webkit-filter: drop-shadow(-1rem 0rem 2rem #cec9c771) drop-shadow(1rem 0rem 4rem #ff5836);
                         // filter: drop-shadow(-0.75rem -0.75rem 1.5rem #ece4e267) drop-shadow(.75rem .75rem 1.2rem #FF5836);
-                        -webkit-filter: drop-shadow(-1rem 0rem 4rem #cec9c771) drop-shadow(1rem 0rem 5rem #ff5836);
                         // filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
                         // -webkit-filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
                     }

@@ -2,6 +2,8 @@ import React, { useState} from 'react'
 import icon from "./../img/fungiball.svg"
 import { FaBars, FaTimes } from 'react-icons/fa'
 import "./../css/Navbar.scss"
+import {BsTwitter, BsInstagram} from "react-icons/bs";
+import {FaDiscord} from "react-icons/fa";
 
 
 export default function Navbar() {
@@ -20,6 +22,7 @@ export default function Navbar() {
                         {click ? <FaTimes /> : <FaBars />}
                     </div>
                     <div className={click ? 'right-text-active' : 'right-text'}>
+                        <div className='mnu-left'>
                         <a className='mnu' onClick={e => {
                         let hero = document.getElementById("Collection");
                         e.preventDefault();  // Stop Page Reloading
@@ -33,10 +36,16 @@ export default function Navbar() {
                         }}> Play to Earn</a>
 
                         <a className='mnu' onClick={e => {
+                        let hero = document.getElementById("Skills");
+                        e.preventDefault();  // Stop Page Reloading
+                        hero && hero.scrollIntoView({behavior: "smooth"});
+                        }}>Skills</a>
+
+                        <a className='mnu' onClick={e => {
                         let hero = document.getElementById("Roadmap");
                         e.preventDefault();  // Stop Page Reloading
                         hero && hero.scrollIntoView({behavior: "smooth"});
-                        }}> The Roadmap</a>
+                        }}>Roadmap</a>
 
                         <a className='mnu'
                         onClick={e => {
@@ -50,9 +59,15 @@ export default function Navbar() {
                         e.preventDefault();  // Stop Page Reloading
                         hero && hero.scrollIntoView({behavior: "smooth"});
                         }}> FAQ</a>
+                        </div>
 
-                        <a href='#' className='mnu'> White Paper</a>
+                        {/* <a href='#' className='mnu'> White Paper</a> */}
                         <div className='blur-nav'></div>
+                        <div className='social-nav'>
+                            <a href='https://discord.gg/9cWQE4f3'><FaDiscord className='icon'/></a>
+                            <a href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><BsTwitter className='icon'/></a>
+                            <a href='https://www.instagram.com/fungiball.io/'><BsInstagram className='icon'/></a>
+                        </div>
                     </div>
                 </div>
             </div>
