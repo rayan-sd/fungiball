@@ -28,9 +28,7 @@ const tab = [
     {name : "Antoine Pruvot" ,poste : "CFO & Advisor", img : antoine},
     {name : "Alexandre Thevenet" ,poste : "Communication Director", img : alexandre},
     {name : "Pierre Brill" ,poste : "Crypto Broker", img : guillaume},
-    {name : "Nils Tessier" ,poste : "CTO", img : nills},
     {name : "Guillaume Franc" ,poste : "Advisor", img : pierre},
-    {name : "Louis Etienne" ,poste : "Advisor", img : louis},
 ]
 
 
@@ -44,7 +42,7 @@ export default class Team extends React.Component {
             <section className='Team' id='Team'>
                 {/* Team-section */}
                 <div className='box-title-Team'>
-                    <h1>The Fungi Team</h1>
+                    <h1>Fungi Team</h1>
                 </div>
                 <div className='container-team'>
                     <div className='blur-team'></div>
@@ -90,7 +88,7 @@ export default class Team extends React.Component {
                                 <a>Twitter</a>
                             </div>
                         </div>
-                        <div className='box-team'>
+                        {/* <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={louis}></img>
                             </div>
@@ -102,7 +100,7 @@ export default class Team extends React.Component {
                                 <a href="#">LinkedIn</a>
                                 <a href="#">Twitter</a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={antoine}></img>
@@ -144,7 +142,7 @@ export default class Team extends React.Component {
                                 <a>Twitter</a>
                             </div>
                         </div>
-                        <div className='box-team'>
+                        {/* <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={nills}></img>
                             </div>
@@ -156,7 +154,7 @@ export default class Team extends React.Component {
                                 <a href="#">LinkedIn</a>
                                 <a href="#">Twitter</a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={guillaume}></img>

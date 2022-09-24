@@ -1,5 +1,5 @@
 import React from 'react'
-import edouard from './../img/gif1.gif'
+import edouard from './../img/Edouard.png'
 import "./../css/Hero.scss"
 import trophy from "./../img/trophy.png"
 import starhero from "./../img/hero-stars.png"
@@ -17,7 +17,7 @@ export default function Hero() {
                         <p>Play with the reality of the game. FungiBall NFT cards are connected with reality, each card is connected to a <span className='weightt'>professional tennis player</span> and the value of this one is evolving according to the performance of the player.</p>
                         <p>Mixe the skills of the best tennis player in the world, <span className='weightt'>create the ultimate tennis</span> player, participate to digital tournaments, and make profit!</p>
                         <div className='box'>
-                            <button> GET STARTED</button>
+                            <a href='https://discord.gg/9cWQE4f3'> GET STARTED</a>
                         </div>
                     </div>
                     <div className='box-rhero'>

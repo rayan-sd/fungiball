@@ -18,9 +18,12 @@ body {
   overflow-x: hidden;
 }
 
-.App {
-  overflow: hidden;
+@media only screen and (max-width: 1100px) {
+  .App {
+    overflow: hidden;
+  }
 }
+
 /* @font-face {
   font-family: "Söhne Breit Test";
   src: url("./Font/BreitTest.ttf") format("truetype"),

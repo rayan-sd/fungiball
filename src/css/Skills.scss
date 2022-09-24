@@ -137,16 +137,39 @@
         }
         .box-skills:hover {
             img {
-                opacity: 0;
-                animation: opac 2s;
+                opacity: 1;
+                animation: opac 2.5s;
             }
         }
 
         @keyframes opac {
-            from { opacity: 0;}
+            from {opacity: 1; width: 85px; height: 85px;}
             to {
                 opacity: 1;
+                width: 38.69px;
+                height: 38.69px;
             }
+            // 0% { opacity: 0;}
+            // 25% {
+            //     opacity: 1;
+            //     width: 80.69px;
+            //     height: 80.69px;
+            // }
+            // 50% {
+            //     opacity: 1;
+            //     width: 57.69px;
+            //     height: 57.69px;
+            // }
+            // 75% {
+            //     opacity: 1;
+            //     width: 45.69px;
+            //     height: 45.69px;
+            // }
+            // 100% {
+            //     opacity: 1;
+            //     width: 38.69px;
+            //     height: 38.69px;
+            // }
         }
 
         .b {

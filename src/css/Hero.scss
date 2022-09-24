@@ -11,9 +11,8 @@
     .container-hero {
         width: 75%;
         height: 100%;
-        gap: 40px;
         z-index: 100;
-        position: relative;
+        // position: relative;
 
         hr {
             display: none;
@@ -35,7 +34,7 @@
             height: 240.95px;
             position: absolute;
             bottom: -120px;
-            left: 0;
+            left: 12.5%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -131,12 +130,13 @@
                 border-radius: 10px;
                 box-shadow: 15px 6px 46px 15px rgba(255,88,54,0.4);
 
-                button {
+                a {
                     border: transparent;
                     border-radius: 10px;
                     display: inline-block;
                     position:relative;
                     box-sizing: border-box;
+                    text-align: center;
                     // box-shadow: 1px 6px 46px 1px rgba(255,88,54,0.1);
                     background: #FC6E51;
 
@@ -149,7 +149,7 @@
                     height: 100%;
                     padding: 20px;
                 }
-                button:after{
+                a:after{
                       content:"";
                     background:#FC6E51;
                     // box-shadow: 1px 6px 46px 1px rgba(255,88,54,0.1);
@@ -164,7 +164,7 @@
                     box-sizing: border-box
                 }
 
-                button:hover {
+                a:hover {
                     color: #FC6E51;
                     background-color: white;
 
@@ -178,10 +178,11 @@
         .box-rhero {
             display: block;
             img {
-                filter: drop-shadow(-0.75rem -0.75rem 1.5rem #ece4e267) drop-shadow(.75 .75px 1.2rem #FF5836);
+                filter: drop-shadow(-0.75rem -0.75rem 3rem #ece4e267) drop-shadow(.75 .75px 5rem #FF5836);
                 // filter: drop-shadow(-0.75rem -0.75rem 1.5rem #ece4e267) drop-shadow(.75rem .75rem 1.2rem #FF5836);
-                -webkit-filter: drop-shadow(-0.75rem -0.75rem 1.5rem #ece4e267) drop-shadow(.75rem .75rem 1.2rem #FF5836);
-                // -webkit-filter: drop-shadow(-50px -10px 3rem #ece4e267) drop-shadow(50px -5px 3rem #FF5836);
+                -webkit-filter: drop-shadow(-3rem 0rem 4rem #cec9c74b) drop-shadow(3rem 0rem 5rem #ff5836);
+                // filter: drop-shadow(-50px -10px 3rem #ece4e267) drop-shadow(50px -5px 3rem #FF5836);
+                // -webkit-filter: drop-shadow(-50px -10px 2rem #ece4e267) drop-shadow(50px -5px 2rem #FF5836);
                 display: block;
                 width: 35vw;
             }
@@ -191,8 +192,14 @@
 
 @media only screen and (max-width: 1100px) {
     .Hero {
+        // height: 100vh;
         .container-hero {
             width: 85%;
+            // position: relative;
+
+            .text-turn {
+                left: 7.5%;
+            }
 
             .box-lhero {
                 h2 {
@@ -244,21 +251,21 @@
             }
         }
     }
-}
-@media only screen and (max-height: 900px) {
-    .Hero {
-        .container-hero {
-            width: 90vh;
-
-            .box-lhero {
-                gap: 18px;
-            }
-
-            .box-rhero img {
-                width: 40vw;
-            }
-        }
-    }
+    // @media only screen and (max-height: 900px) {
+    //     .Hero {
+    //         .container-hero {
+    //             width: 90vh;
+    
+    //             .box-lhero {
+    //                 gap: 18px;
+    //             }
+    
+    //             .box-rhero img {
+    //                 width: 40vw;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 950px) {
@@ -267,13 +274,14 @@
         // overflow-y: hidden;
         .container-hero {
             width: 80%;
+            height: 90%;
 
             .text-turn {
                 width: 160px;
                 height: 160.95px;
                 position: absolute;
                 bottom: -80px;
-                left: 0;
+                left: 10%;
     
                 img {
                     width: 32px;
@@ -283,17 +291,18 @@
 
             .hero-box-tt {
                 flex-direction: column;
-                padding-top: 18vh;
+                // padding-top: 120px;
                 gap: 5px;
+                justify-content: flex-start;
                 // padding-top: 90px;
                 // gap: 50px;
             }
 
             .box-lhero {
-                gap: 20px;
+                gap: 15px;
                 h2 {
-                    font-size: 16px;
-                    line-height: 28px;
+                    font-size: 14px;
+                    line-height: 25px;
                     gap: 15px;
     
                     img {
@@ -303,18 +312,18 @@
                 }
     
                 h1 {
-                    font-size: 50px;
+                    font-size: 40px;
                     line-height: 40px;
                     
                     span {
-                        font-size: 50px;
+                        font-size: 40px;
                         line-height: 40px;
                     }
                 }
     
                 p {
-                    font-size: 17px;
-                    line-height: 27px;
+                    font-size: 15px;
+                    line-height: 25px;
                 }
     
                 .box {
@@ -330,7 +339,7 @@
     
             .box-rhero {
                 img {
-                    width: 45vw;
+                    width: 40vw;
                     // filter: drop-shadow(-50px -10px 3rem #ece4e267) drop-shadow(50px -5px 3rem #FF5836);
                 }
             }
@@ -338,17 +347,24 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .Hero {
+        height: 100vh;
+        padding-top: 10vh;
+    }
+}
 @media only screen and (max-width: 600px) {
     .Hero {
-        padding-top: 60px;
+        padding-top: 70px;
         flex-direction: column;
         height: 100vh;
         border-bottom: transparent;
         position: unset;
+        justify-content: flex-start;
         
         .container-hero {
             width: 100%;
-            height: 100%;
+            height: 90%;
             position: unset;
 
             hr {
@@ -376,7 +392,7 @@
 
             .hero-box-tt {
                 flex-direction: column;
-                padding-top: 15px;
+                padding-top: 0;
                 gap: 0px;
                 // height: 0%;
                 width: 100%;
@@ -434,7 +450,7 @@
                     border-radius: 10px;
                     box-shadow: 15px 6px 46px 15px rgba(255,88,54,0.3);
 
-                    button {
+                    a {
                         font-size: 10px;
                         line-height: 12px;
                         padding: 15px;
@@ -448,7 +464,7 @@
                 align-items: center;
                 flex: 1;
                 position: relative;
-                bottom: 5px;
+                bottom: 0px;
 
                 img {
                     width: 70vw;
@@ -462,7 +478,7 @@
         .Hero {
             .container-hero {
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 position: unset;
     
                 .hero-box-tt {
@@ -479,12 +495,15 @@
                     align-items: center;
                     flex: 1;
                     position: relative;
-                    bottom: 25px;
+                    bottom: 0px;
     
                     img {
                         width: 50vw;
-                        filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
-                        -webkit-filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
+                        filter: drop-shadow(-1rem 0rem 4rem #cec9c771) drop-shadow(1rem 0rem 5rem #ff5836);
+                        // filter: drop-shadow(-0.75rem -0.75rem 1.5rem #ece4e267) drop-shadow(.75rem .75rem 1.2rem #FF5836);
+                        -webkit-filter: drop-shadow(-1rem 0rem 4rem #cec9c771) drop-shadow(1rem 0rem 5rem #ff5836);
+                        // filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
+                        // -webkit-filter: drop-shadow(-0.5rem 0rem .5rem #ece4e267) drop-shadow(0.5rem 0rem .5rem #FF5836);
                     }
                 }
             }

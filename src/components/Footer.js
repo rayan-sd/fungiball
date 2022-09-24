@@ -16,11 +16,11 @@ export default function Footer() {
                             <h2>fungiballs</h2>
                             <h3>© 2021 - <span>fungiballs</span></h3>
                         </div>
-                        <a>Try for free</a>
+                        <a href='https://discord.gg/9cWQE4f3'>Join Discord</a>
                     </div>
                     <div className='box-t-middle'>
                         <div className='box-footer'>
-                            <h2>Section</h2>
+                            {/* <h2>Section</h2> */}
                             <div className='box-text-midlle'>
                                 <a onClick={e => {
                                     let hero = document.getElementById("Collection");
@@ -42,8 +42,13 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className='box-footer'>
-                            <h2>Section</h2>
+                            {/* <h2>Section</h2> */}
                             <div className='box-text-midlle'>
+                            <a onClick={e => {
+                                    let hero = document.getElementById("Skills");
+                                    e.preventDefault();  // Stop Page Reloading
+                                    hero && hero.scrollIntoView({ behavior: "smooth" });
+                                }}> Skills</a>
                                 <a onClick={e => {
                                     let hero = document.getElementById("Team");
                                     e.preventDefault();  // Stop Page Reloading
@@ -56,7 +61,6 @@ export default function Footer() {
                                     hero && hero.scrollIntoView({ behavior: "smooth" });
                                 }}> FAQ</a>
 
-                                <a href='#'>White Paper</a>
                             </div>
                         </div>
                     </div>
@@ -64,21 +68,21 @@ export default function Footer() {
                         <div className='gp'>
                             <h2>Contact</h2>
                             <div className='contact-footer'>
-                                <a><img alt='facebook' src={fb}></img></a>
-                                <a><img alt='twitter' src={twitter}></img></a>
-                                <a><img alt='linkedin' src={linkedin}></img></a>
+                                <a href=''><img alt='facebook' src={fb}></img></a>
+                                <a href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><img alt='twitter' src={twitter}></img></a>
+                                <a href='https://www.instagram.com/fungiball.io/'><img alt='linkedin' src={linkedin}></img></a>
                             </div>
                         </div>
-                        <a>hello@fungiballs.com</a>
+                        <a href="mailto: contact@astate.io">contact@astate.io</a>
                     </div>
                 </div>
                 <div className='bottom-footer'>
                     <div className='box-b-left'>
-                        <p>Legal Notice</p>
+                    <a href='https://www.vmstudio.xyz/' className='vms'>Produced by <span>Virtual Miracle Studio</span></a>
                     </div>
-                    <div className='box-b-right'>
+                    {/* <div className='box-b-right'>
                         <p>PERSONAL DATA PROTECTION POLICIES AND COOKIES MANAGEMENT</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

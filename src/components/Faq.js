@@ -23,7 +23,8 @@ export default function Faq() {
                     </div>
                     <div className='col2'>
                         <span>Couldn’t find what you were looking for? write to us at</span>
-                        <a href='#'>hello@fungiballs.com</a>
+                        <a href="mailto: contact@astate.io">contact@astate.io</a>
+                        {/* <a href = "mailto: abc@example.com">Send Email</a> */}
                     </div>
                 </div>
                 <div className='right-faq'>
@@ -64,7 +65,7 @@ export default function Faq() {
                     </div>
                         <div className='col-social-faq'>
                             <span>Couldn’t find what you were looking for? write to us at</span>
-                            <a href='#'>hello@fungiballs.com</a>
+                            <a href="mailto: contact@astate.io">contact@astate.io</a>
                         </div>
                 </div>
             </div>
