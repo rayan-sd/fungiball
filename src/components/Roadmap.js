@@ -172,13 +172,13 @@ Trad your card between each other to find the best combo, the game is coming soo
                     <div className='counter'>
                     {/* <Clock endTime={360000} /> */}
                     {/* <FlipClockCountdown to={-36000000000000} /> */}
-                        {/* { compteur()} */}
-                        <div className='digit' data-digit-before="0" data-digit-after="1">
+                        { compteur()}
+                        {/* <div className='digit' data-digit-before="0" data-digit-after="1">
                             <div className='card' className={isActive ? "card flipped" : "card"} onClick={handleToggle}>
                                 <div className='card-face card-face-front'>0</div>
                                 <div className='card-face card-face-back'>1</div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* <span className='num'>{time%10}</span>
                         <span className='num'>6</span> */}
                     </div>
