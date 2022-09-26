@@ -1,8 +1,6 @@
 import React, { useEffect, useState} from 'react'
 // import edouard from './../img/Edouard.png'
 import "./../css/Roadmap1.scss"
-// import Aos from "aos"
-import "aos/dist/aos.css"
 // import roadmap from "./../img/roadmap.png"
 import Clock from "react-flip-clock-count-down";
 
