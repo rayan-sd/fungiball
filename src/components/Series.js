@@ -36,7 +36,7 @@ export default function Series() {
 
             <div className='timeline'>
                 <div className='outer'>
-                    <div className='card'>
+                    <div className='card-serie'>
                         <div className='info-card-l'>
                             <h2 className='t1'>Play to <span>EARN</span></h2>
                             <div className='text-card'>
@@ -52,7 +52,7 @@ export default function Series() {
                             <img alt='icon1' src={icon1}></img>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div className='card-serie'>
                         <div className='info-card-l'>
                             <h2 className='t2'>What is a <span>FungiPlayer</span></h2>
                             <div className='text-card'>
@@ -67,7 +67,7 @@ export default function Series() {
                             <img alt='icon1' src={icon2}></img>
                         </div>
                     </div>
-                    <div className='card'>
+                    <div className='card-serie'>
                         <div className='info-card-l'>
                             <h2 className='t3'>How to get <span>rewarded</span></h2>
                             <div className='text-card'>

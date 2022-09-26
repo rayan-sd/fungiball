@@ -164,7 +164,7 @@
             border-left: 2px solid #E1E5EA;
 
 
-            .card {
+            .card-serie {
                 position: relative;
                 margin: 0 0 20px 90px;
                 // padding: 10px;
@@ -414,7 +414,7 @@
 
                 .outer {
                     border-left: transparent;
-                    .card {
+                    .card-serie {
                         gap: 0;
                         margin: 0 0px 140px 0px;
                         width: 100%;
@@ -520,7 +520,7 @@
 
         .timeline  {
             .outer {
-                .card {
+                .card-serie {
                     gap: 20px;
                 }
 
@@ -594,7 +594,7 @@
 
         .timeline  {
             .outer {
-                .card {
+                .card-serie {
                     gap: 20px;
                     padding-bottom: 20px;
 

@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Collection from './components/Collection';
 import Skills from './components/Skills';
 import Series from './components/Series';
-import Roadmap from './components/Roadmap';
+import Roadmap from './components/Roadmap1';
 import Team from './components/Team';
 import Faq from './components/Faq';
 import Footer from './components/Footer';

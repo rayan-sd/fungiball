@@ -136,9 +136,7 @@ export default function Roadmap() {
                 <div className='l4'>
                     <div className='box'>
                         <h2>20 000 NFT SOLD</h2>
-                        <p>Start with an advantage, NFT owners of card from 1 to 10 000 will get special tips to perform in the game and early access to the platform.
-
-Trad your card between each other to find the best combo, the game is coming soon !</p>
+                        <p>Start with an advantage, NFT owners of card from 1 to 10 000 will get special tips to perform in the game and early access to the platform. Trad your card between each other to find the best combo, the game is coming soon !</p>
                     </div>
                     <div className='case'>
                     <div className='back-color4 test'></div>

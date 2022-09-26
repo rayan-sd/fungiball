@@ -2,24 +2,26 @@
     width: 100%;
     height: 100%;
     display: flex;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     gap: 150px;
-    margin-top: 25vh;
+    margin-top: 15vh;
     padding-bottom: 100px;
+    // position: relative;
 
     .box-title-Roadmap {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 35px;
-        width: 60%;
+        width: 100%;
 
         h1 {
             font-family: 'Söhne Breit Test-regular';
-            font-size: 60px;
+            font-size: 50px;
             line-height: 50px;
             text-align: center;
             text-transform: uppercase;
@@ -27,7 +29,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-fill-color: transparent;
+            text-fill-color: transparent;;
         }
     
         p {
@@ -38,6 +40,290 @@
             line-height: 30px;
             text-align: center;
             color: #FFFFFF;
+            width: 60%;
+        }
+    }
+
+    .container-all {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: 100%;
+
+        .container-counter {
+            width: 40%;
+            // height: 100%;
+            display: flex;
+            justify-content: center;
+
+
+            .box-counter::before {
+                content: "";
+                width: 2px;
+                height: 400px;
+                left: -15%;
+                position: absolute;
+                background-color: #EE4200;
+                display: inline-block;
+            }
+
+
+            .stickybox {
+                position: sticky;
+                top : 30%;
+            }
+
+            .box-counter {
+                background: url("./../img/back-roadmap.png");
+                background-size: 130% 130%;
+                background-repeat: no-repeat;
+                background-position: center;
+                // width: 45%;
+                max-width: 334px;
+                height: 294px;
+                display: flex;
+                flex-direction: column;
+                // position: relative;
+                justify-content: center;
+                align-items: center;
+                box-shadow: -6px 6px 28px rgba(0, 0, 0, 0.47), inset 0px -2.50245px 1.25122px rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(18.7684px);
+                padding: 0 20px;
+                gap: 30px;
+                /* Note: backdrop-filter has minimal browser support */
+
+                border-radius: 20px;
+                transform: matrix(1, 0, 0, 1, 0, 0);
+    
+                h3 {
+                    font-family: 'Söhne Breit Test2';
+                    font-size: 20px;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    opacity: 0.88;
+                    width: 70%;
+                }
+    
+                // .counter {
+                //     // display: flex;
+                //     // justify-content: center;
+                //     // align-items: center;
+                  
+                //     // font-family: 'Söhne Breit Test2';
+                //     // font-size: 100px;
+                //     // line-height: 0;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     gap: 20px;
+                //     width: 100%;
+                //     // user-select: none;
+                // }
+
+                // .digits {
+                //     position: relative;
+                //     width: 30%;
+                //     height: 150px;
+                //     background-color: #A02C00;
+
+                //     .card {
+                //         font-family: 'Söhne Breit Test2';
+                //         font-size: 85px;
+                //         line-height: 42px;
+                //         font-weight: 700;
+                //         position: relative;
+                //         z-index: 1;
+                //         width: 100%;
+                //         height: 50%;
+                //         transform-style: preserve-3d;
+                //         transform-origin: bottom;
+                //         transform: rotateX(0);
+
+                //     }
+                //     .card.flipped {
+                //         transform: rotate(-180deg);
+                //     }
+
+                //     .card-face {
+                //         position: absolute;
+                //         display: flex;
+                //         justify-content: center;
+                //         width: 100%;
+                //         height: 100%;
+                //         overflow: hidden;
+                //         backface-visibility: hidden;
+                //     }
+
+                //     .card-face-front {
+                //         align-items: flex-end;
+                //         color: #FFFFFF;
+                //         background: red;
+
+                //     }
+                //     .card-face-back {
+                //         background: blue;
+                //         color: #FFFFFF;
+                //         align-items: flex-start;
+                //         transform: rotate(-180deg);
+                //     }
+                // }
+                
+                // .digits::before {
+                //     content: attr(data-digit-before);
+                //     font-family: 'Söhne Breit Test2';
+                //     font-size: 85px;
+                //     line-height: 42px;
+                //     font-weight: 700;
+                //     bottom: 0;
+                //     align-items: flex-start;
+                // }
+                // .digits::after {
+                //     content: attr(data-digit-after);
+                //     font-family: 'Söhne Breit Test2';
+                //     font-size: 85px;
+                //     line-height: 42px;
+                //     font-weight: 700;
+                //     top: 0;
+                //     align-items: flex-end;
+                // }
+                // .digits::before,
+                // .digits::after {
+                //     position: absolute;
+                //     z-index: 0;
+                //     display: flex;
+                //     justify-content: center;
+                //     width: 100%;
+                //     height: 50%;
+                //     overflow: hidden;
+                // }
+                // .digit {
+                //     position: relative;
+                  
+                //     width: 90px;
+                //     height: 160px;
+                  
+                //     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+                //   }
+                  
+                //   .digit-left {
+                //     margin-right: 1px;
+                //   }
+                  
+                //   .digit-right {
+                //     margin-left: 1px;
+                //   }
+                  
+                //   .digit::before,
+                //   .digit::after {
+                //     position: absolute;
+                //     z-index: 0;
+                  
+                //     display: flex;
+                //     justify-content: center;
+                  
+                //     width: 100%;
+                //     height: 50%;
+                //     overflow: hidden;
+                //   }
+                  
+                //   .digit::before {
+                //     content: attr(data-digit-before);
+                  
+                //     bottom: 0;
+                //     align-items: flex-start;
+                //   }
+                  
+                //   .digit::after {
+                //     content: attr(data-digit-after);
+                  
+                //     top: 0;
+                //     align-items: flex-end;
+                //   }
+                  
+                //   .card {
+                //     position: relative;
+                //     z-index: 1;
+                  
+                //     width: 100%;
+                //     height: 50%;
+                  
+                //     -webkit-transform-style: preserve-3d;
+                //     -moz-transform-style: preserve-3d;
+                //     transform-style: preserve-3d;
+                  
+                //     -webkit-transform-origin: bottom;
+                //     -moz-transform-origin: bottom;
+                //     transform-origin: bottom;
+                  
+                //     -webkit-transform: rotateX(0);
+                //     -moz-transform: rotateX(0);
+                //     transform: rotateX(0);
+                  
+                //     -webkit-transition: transform 0.7s ease-in-out;
+                //     -moz-transition: transform 0.7s ease-in-out;
+                //     transition: transform 0.7s ease-in-out;
+                //   }
+                  
+                //   .card.flipped {
+                //     transform: rotateX(-180deg);
+                //   }
+                  
+                //   .card-face {
+                //     position: absolute;
+                  
+                //     display: flex;
+                //     justify-content: center;
+                  
+                //     width: 100%;
+                //     height: 100%;
+                //     overflow: hidden;
+                  
+                //     -webkit-backface-visibility: hidden;
+                //     -moz-backface-visibility: hidden;
+                //     backface-visibility: hidden;
+                //   }
+                  
+                //   .card-face-front {
+                //     align-items: flex-end;
+                //   }
+                  
+                //   .card-face-back {
+                //     align-items: flex-start;
+                  
+                //     -webkit-transform: rotateX(-180deg);
+                //     -moz-transform: rotateX(-180deg);
+                //     transform: rotateX(-180deg);
+                //   }
+
+    
+                // .num {
+                //     font-family: 'Söhne Breit Test2';
+                //     font-size: 68px;
+                //     line-height: 42px;
+                //     font-weight: 700;
+                //     text-align: center;
+                //     color: #FFFFFF;
+                //     opacity: 0.88;
+                //     background: linear-gradient(156.02deg, rgba(84, 84, 84, 0.6091) 5.67%, rgba(0, 0, 0, 0.6091) 30.52%);
+                //     box-shadow: -6px 6px 28px rgba(0, 0, 0, 0.47), inset 0px -2.50245px 1.25122px rgba(255, 255, 255, 0.1);
+                //     backdrop-filter: blur(18.7684px);
+                //     width: 25%;
+                //     position: relative;
+                //     /* Note: backdrop-filter has minimal browser support */
+    
+                //     border-radius: 20px;
+                //     transform: matrix(1, 0, 0, 1, 0, 0);
+                //     padding: 40px 0px;
+
+                //     hr {
+                //         position: absolute;
+                //         top: 50%;
+                //         width: 100%;
+                //         height: 1px;
+                //     }
+                // }
+            }
         }
     }
 
@@ -46,7 +332,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 60%;
         height: 100%;
         gap: 100px;
         position: relative;
@@ -56,10 +342,6 @@
         background-size: 75% 100%;
 
         img {
-        // background-image: url("./../img/roadmap.png");
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: 75% 100%;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -70,9 +352,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 250px;
+            gap: 130px;
             margin-top: 50px;
-            margin-left: 50px;
+            // margin-left: 50px;
+        }
+
+        .l1 > .box {
+            width: 25vw;
         }
 
         .l2::after {
@@ -82,41 +368,53 @@
             content: "";
             background: rgba(122, 159, 159, 0.963834);
             filter: blur(140px);
+            -webkit-filter: blur(140px);
             width: 250px;
             height: 250px;
-
+            z-index: -1;
         }
         .l2 {
             width: 100%;
             display: flex;
             align-items: center;
-            gap: 300px;
+            gap: 70px;
+            padding-left: 50px;
         }
+        .l2 > .box {
+                width: 50%;
+                padding: 30px 30px;
+        }
+        .l2 > .case {
+            flex: 0;
+        }
+
         .l3 {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            gap: 300px;
+            gap: 100px;
         }
         .l4 {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 200px;
-            margin-left: 7vw;
+            gap: 100px;
+            // margin-left: 7vw;
         }
         .l5::before {
-            position: relative;
+            position: absolute;
             display: inline-block;
             left: 20vw;
             top: 50px;
             content: "";
             background: rgba(122, 159, 159, 0.963834);
             filter: blur(140px);
+            -webkit-filter: blur(140px);
             width: 250px;
             height: 250px;
+            z-index: -1;
         }
 
         .l5 {
@@ -124,33 +422,40 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            gap: 150px;
+            gap: 100px;
             margin-top: 100px;
+            position: relative;
         }
         .l6 {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            gap: 300px;
+            gap: 150px;
+            padding-left: 50px;
+        }
+
+        .l6 > .box p {
+            width: 90%;
         }
 
         .case {
             border: 1px solid #FFFFFF;
-            padding: 15px 100px;
+            padding: 15px 70px;
             position: relative;
+            z-index: 1;
             
             .back-color::before {
                 width: 0;
             }
             .back-color {
                 background: linear-gradient(90.88deg, #A02C00 0.75%, #EE4200 87.96%, #000000 99.25%);
-                width: 10%;
+                width: 0%;
                 height: 100%;
                 left: 0;
                 top: 0;
                 position: absolute;
-                animation: slidein 5s;
+                // animation: slidein 5s;
             }
 
             .back-color1::before {
@@ -170,17 +475,17 @@
             }
 
             .back-color1 {
-                width: 13%;
+                width: 0%;
                 background: linear-gradient(90.88deg, #A02C00 0.75%, #EE4200 87.96%, #000000 99.25%);
                 height: 100%;
                 left: 0;
                 top: 0;
                 position: absolute;
                 z-index: -1;
-                animation: slidein 5s;
+                // animation: slidein 5s;
             }
             .back-color3 {
-                width: 18%;
+                width: 0%;
                 background: linear-gradient(90.88deg, #A02C00 0.75%, #EE4200 87.96%, #000000 99.25%);
                 height: 100%;
                 left: 0;
@@ -190,7 +495,7 @@
                 animation: slidein 5s;
             }
             .back-color4 {
-                width: 22%;
+                width: 0%;
                 background: linear-gradient(90.88deg, #A02C00 0.75%, #EE4200 87.96%, #000000 99.25%);
                 height: 100%;
                 left: 0;
@@ -200,17 +505,17 @@
                 animation: slidein 5s;
             }
             .back-color5 {
-                width: 27%;
+                width: 0%;
                 background: linear-gradient(90.88deg, #A02C00 0.75%, #EE4200 87.96%, #000000 99.25%);
                 height: 100%;
                 left: 0;
                 top: 0;
                 position: absolute;
                 animation: slidein 5s;
-                // z-index: -1;
+                z-index: -1;
             }
             .back-color6 {
-                width: 32%;
+                width: 0%;
                 background: linear-gradient(90.88deg, #A02C00 0.75%, #EE4200 87.96%, #000000 99.25%);
                 height: 100%;
                 left: 0;
@@ -225,11 +530,37 @@
                 line-height: 19px;
                 text-transform: uppercase;
                 color: #FFFFFF;
+                z-index: 10;
             }
         }
 
         @keyframes slidein {
             from { width: 0%;}
+        }
+
+        @keyframes slidein2 {
+            from { width: 0%;}
+            to { width: 15%;}
+        }
+        @keyframes slidein3 {
+            from { width: 0%;}
+            to { width: 30%;}
+        }
+        @keyframes slidein4 {
+            from { width: 0%;}
+            to { width: 45%;}
+        }
+        @keyframes slidein5 {
+            from { width: 0%;}
+            to { width: 60%;}
+        }
+        @keyframes slidein6 {
+            from { width: 0%;}
+            to { width: 80%;}
+        }
+        @keyframes slidein7 {
+            from { width: 0%;}
+            to { width: 100%;}
         }
         @keyframes fadein {
             from {
@@ -256,19 +587,681 @@
 
             h2 {
                 font-family: 'Söhne Breit Test2';
-                font-size: 25px;
-                line-height: 29px;
+                font-size: 23px;
+                line-height: 27px;
                 text-transform: uppercase;
                 color: #FFFFFF;
             }
 
             p {
                 font-family: 'Söhne Breit Test-regular';
-                font-size: 16px;
-                line-height: 23px;
+                font-size: 14px;
+                line-height: 21px;
                 text-align: justify;
                 color: #FFFFFF;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .Roadmap {
+        overflow-x: hidden;
+        .box-title-Roadmap {
+            gap: 50px;
+        
+            p {
+                width: 75%;
+            }
+        }
+
+        .container-all {
+            display: flex;
+            width: 100%;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 130px;
+            height: 100%;
+    
+            .container-counter {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+    
+    
+                .box-counter::before {
+                    content: "";
+                    width: 500px;
+                    height: 2px;
+                    left: -85px;
+                    bottom: -30px;
+                    position: absolute;
+                    background-color: #EE4200;
+                    display: inline-block;
+                }
+    
+    
+                .stickybox {
+                    position: unset;
+                    top : 30px;
+                }
+    
+                .box-counter {
+                    background: url("./../img/back-roadmap.png");
+                    background-size: 130% 130%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-attachment: fixed;
+                    // width: 45%;
+                    max-width: 334px;
+                    height: 294px;
+                    display: flex;
+                    flex-direction: column;
+                    // position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: -6px 6px 28px rgba(0, 0, 0, 0.47), inset 0px -2.50245px 1.25122px rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(18.7684px);
+                    padding: 0 20px;
+                    gap: 30px;
+                    /* Note: backdrop-filter has minimal browser support */
+    
+                    border-radius: 20px;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                }
+            }
+        }
+        .container-Roadmap  {
+            width: 90%;
+
+            .l1 {
+                gap: 13vw;
+            }
+
+            .l1 > .box {
+                width: 50%;
+            }
+            .l2 {
+                gap: 10vw;
+            }
+            .l2 > .box {
+                width: 50%;
+            }
+            .l3 {
+                gap: 10vw;
+            }
+            .l3 > .box {
+                width: 50%;
+            }
+            .l4 {
+                gap: 10vw;
+            }
+            .l4 > .box {
+                width: 50%;
+            }
+            .l5 {
+                gap: 10vw;
+            }
+            // .l5::before {
+            // }
+
+            .l5 > .box {
+                width: 50%;
+            }
+            .l6 {
+                gap: 10vw;
+            }
+            .l6 > .box {
+                width: 50%;
+            }
+
+            .box {
+                width: 40%;
+                padding: 30px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .Roadmap {
+        margin-top: 0vh;
+        gap: 80px;
+
+        .box-title-Roadmap {
+            gap: 50px;
+        
+            h1 {
+                font-size: 30px;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                width: 90%;
+            }
+        }
+        .container-all {
+            display: flex;
+            width: 100%;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 130px;
+            height: 100%;
+    
+            .container-counter {
+                width: 40%;
+                // height: 100%;
+                display: flex;
+                justify-content: center;
+                // background-color: #A02C00;
+    
+    
+                .box-counter::before {
+                    content: "";
+                    width: 440px;
+                    height: 2px;
+                    left: -85px;
+                    bottom: -30px;
+                    position: absolute;
+                    background-color: #EE4200;
+                    display: inline-block;
+                }
+    
+    
+                .stickybox {
+                    position: unset;
+                    top : 30px;
+                }
+    
+                .box-counter {
+                    max-width: 274px;
+                    height: 234px;
+        
+                    h3 {
+                        font-size: 18px;
+                        line-height: 29px;
+                        width: 100%;
+                    }
+        
+                    .num {
+                        font-family: 'Söhne Breit Test2';
+                        font-size: 55px;
+                        line-height: 42px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #FFFFFF;
+                        opacity: 0.88;
+                        background: linear-gradient(156.02deg, rgba(84, 84, 84, 0.6091) 5.67%, rgba(0, 0, 0, 0.6091) 30.52%);
+                        box-shadow: -6px 6px 28px rgba(0, 0, 0, 0.47), inset 0px -2.50245px 1.25122px rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(18.7684px);
+                        width: 30%;
+                        position: relative;
+                        /* Note: backdrop-filter has minimal browser support */
+        
+                        border-radius: 20px;
+                        transform: matrix(1, 0, 0, 1, 0, 0);
+                        padding: 40px 0px;
+    
+                        hr {
+                            position: absolute;
+                            top: 50%;
+                            width: 100%;
+                            height: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .container-Roadmap  {
+            width: 90%;
+
+            .box {
+                align-items: center;
+            }
+            .l1 {
+                flex-direction: column;
+                gap: 5vw;
+                margin-left: 0;
+                margin-top: 0;
+            }
+            .l1 > .box {
+                width: 80%;
+            }
+            .l2 {
+                flex-direction: column-reverse;
+                gap: 5vw;
+                padding-left: 0;
+            }
+            .l2::after {
+                width: 150px;
+                height: 150px;
+            }
+            .l2 > .box {
+                width: 80%;
+            }
+            .l3 {
+                flex-direction: column;
+                gap: 5vw;
+            }
+            .l3 > .box {
+                width: 80%;
+            }
+            .l4 {
+                flex-direction: column-reverse;
+                gap: 5vw;
+            }
+            .l4 > .box {
+                width: 80%;
+            }
+            .l5 {
+                flex-direction: column;
+                gap: 5vw;
+                margin-top: 0;
+            }
+
+            .l5::before {
+                width: 150px;
+                height: 150px;
+            }
+
+            .l5 > .box {
+                width: 80%;
+            }
+            .l6 {
+                flex-direction: column-reverse;
+                gap: 5vw;
+                padding-left: 0;
+            }
+            .l6 > .box {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Roadmap {
+        padding-bottom: 60px;
+
+        .container-all {
+            display: flex;
+            width: 100%;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 130px;
+            height: 100%;
+    
+            .container-counter {
+                width: 100%;
+                // height: 100%;
+                display: flex;
+                justify-content: center;
+                // background-color: #3a288d;
+    
+    
+                .box-counter::before {
+                    content: "";
+                    width: 120%;
+                    height: 2px;
+                    left: -10%;
+                    // right: 10%;
+                    bottom: -30px;
+                    position: absolute;
+                    background-color: #EE4200;
+                    display: inline-block;
+                }
+    
+    
+                .stickybox {
+                    position: unset;
+                    top : 30px;
+                }
+    
+                .box-counter {
+                    max-width: 60%;
+                    height: auto;
+                    gap: 15px;
+                    padding: 20px 0;
+                    backdrop-filter: blur(0);
+                    background: url("./../img/back-roadmap.png");
+                    background-size: 170% 170%;
+                    background-position: center;
+                    h3 {
+                        font-size: 16px;
+                        line-height: 26px;
+                        width: 75%;
+                    }
+                    .num {
+                        font-size: 45px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        width: 30%;
+                        padding: 30px 0px;
+                        transform : nume;
+                    }
+                }
+            }
+        }
+
+        .container-Roadmap {
+            position: relative;
+            background-image: none;
+            width: 100%;
+
+            .l1 {
+                gap: 25px;
+            }
+            .l2 {
+                gap: 25px;
+            }
+            .l2::after {
+                width: 120px;
+                height: 120px;
+                filter: blur(110px);
+                -webkit-filter: blur(60px);
+            }
+            .l3 {
+                gap: 25px;
+            }
+            .l4 {
+                gap: 25px;
+            }
+            .l5 {
+                gap: 25px;
+            }
+            .l5::before {
+                width: 100px;
+                height: 100px;
+                filter: blur(110px);
+                -webkit-filter: blur(60px);
+                top: 100px;
+            }
+            .l6 {
+                gap: 25px;
+            }
+
+            .box {
+                h2 {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+  
+  @for $i from 1 through 10 {
+    .nums-one .nume:nth-of-type(#{$i}) {
+      animation-name: num-one;
+      animation-delay: $i - 1s;
+      animation-duration: 10s;
+      z-index: (10 - $i) + 1;
+    }
+  
+    .nums-ten .nume:nth-of-type(#{$i}) {
+      animation-name: num-ten;
+      animation-delay: ($i * 10s) - 1s;
+      animation-duration: 100s;
+      z-index: (10 - $i) + 1;
+    }
+  }
+  
+  @mixin num-keyframes($name, $time) {
+    $per-100: (1 / $time) * 100%;
+  
+    @keyframes nume {
+      0% {
+        transform: rotateX(0);
+        z-index: 50;
+      }
+      #{$per-100} {
+        transform: rotateX(-180deg);
+        z-index: 50;
+      }
+      90% {
+        transform: rotateX(-180deg);
+        z-index: 1;
+      }
+      90.0001% {
+        transform: rotateX(0);
+      }
+      100% {
+        transform: rotateX(0);
+      }
+    }
+  }
+  
+  @include num-keyframes('one', 10);
+  @include num-keyframes('ten', 100);
+
+
+
+
+.flip-clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    // font-size: 50px;
+    font-family: 'Söhne Breit Test2';
+    font-size: 78px;
+    font-weight: bold;
+    opacity: 0.88;
+    line-height: 0;
+  }
+  
+  .flip-clock-container * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  
+    cursor: default;
+  }
+  
+  .flip-clock {
+    display: flex;
+    gap: 20px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+  }
+  
+  .digit {
+    position: relative;
+  
+    width: 80px;
+    height: 120px;
+  
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .digit-left {
+    margin-right: 1px;
+  }
+  
+  .digit-right {
+    margin-left: 1px;
+  }
+  
+  .digit::before,
+  .digit::after {
+    position: absolute;
+    z-index: 0;
+  
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  
+  .digit::before {
+    content: attr(data-digit-before);
+  
+    bottom: 0;
+    align-items: flex-start;
+  }
+  
+  .digit::after {
+    content: attr(data-digit-after);
+  
+    top: 0;
+    align-items: flex-end;
+  }
+  
+  .card {
+    position: relative;
+    z-index: 1;
+  
+    width: 100%;
+    height: 50%;
+  
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+  
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    transform: rotateX(0);
+  
+    -webkit-transition: transform .4s ease-in-out;
+    -moz-transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+  }
+  
+  .card.flipped {
+    transform: rotateX(-180deg);
+  }
+  
+  .card-face {
+    position: absolute;
+  
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .card-face-front {
+    align-items: flex-end;
+  }
+  
+  .card-face-back {
+    align-items: flex-start;
+  
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+  
+  .digit::before,
+  .digit::after,
+  .card-face-front,
+  .card-face-back {
+    background: black;
+    color: white;
+  }
+  
+  .digit,
+  .digit::before,
+  .digit::after,
+  .card,
+  .card-face {
+    // border-radius: 4px;
+    border-radius: 20px;
+  }
+  
+  .digit::before,
+  .card-face-back {
+    // background: linear-gradient(0, #aaa, #ccc 50%, #fafafa);
+    // color: #212121;
+    background: #202020;
+    // background: linear-gradient(156.02deg, rgba(84, 84, 84, 0.6091) 5.67%, rgba(0, 0, 0, 0.6091) 30.52%);
+    color: white;
+  
+    // border-top: 1px solid black;
+    border-top: 1px solid #828282;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .digit::after,
+  .card-face-front {
+    // background: linear-gradient(0, #aaa, #bbb 50%, #f5f5f5);
+    background: #202020;
+    // background: linear-gradient(156.02deg, rgba(84, 84, 84, 0.6091) 5.67%, rgba(0, 0, 0, 0.6091) 30.52%);
+    color: white;
+  
+    // border-bottom: 1px solid black;
+    border-bottom: 1px solid #828282;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .digit-left,
+  .digit-left::before,
+  .digit-left::after,
+  .digit-left .card,
+  .digit-left .card-face {
+    // border-top-right-radius: 0;
+    // border-bottom-right-radius: 0;
+  }
+  
+  .digit-right,
+  .digit-right::before,
+  .digit-right::after,
+  .digit-right .card,
+  .digit-right .card-face {
+    // border-top-left-radius: 0;
+    // border-bottom-left-radius: 0;
+  }
+  
+//   .colon {
+//     color: black;
+//     margin: 0 6px;
+//     padding-bottom: 9px;
+//   }
+
+@media only screen and (max-width: 600px) {
+    .flip-clock-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        // font-size: 50px;
+        font-family: 'Söhne Breit Test2';
+        font-size: 55px;
+        font-weight: bold;
+        opacity: 0.88;
+        line-height: 0;
+    }
+    .digit {
+    position: relative;
+    width: 70px;
+    height: 100px; 
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     }
 }
