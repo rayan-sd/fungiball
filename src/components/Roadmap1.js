@@ -138,7 +138,7 @@ export default function Roadmap() {
                 setTime(time + 1)
             }
         }
-        setTimeout(runClock, 500);
+        setTimeout(runClock, 300);
         
     return (
         <section className='Roadmap' id='Roadmap'>
