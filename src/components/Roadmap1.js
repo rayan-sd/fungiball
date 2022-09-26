@@ -162,7 +162,7 @@ export default function Roadmap() {
                 </div>
                 <div className='l2'>
                     <div className='box'>
-                        <h2>5000 MEMBERS ON DISCORD, INSTAGRAM, TWITTER</h2>
+                        <h2>5 000 MEMBERS ON DISCORD, INSTAGRAM, TWITTER</h2>
                         <p>NFT giveaway celebration</p>
                     </div>
                     <div className='case'>

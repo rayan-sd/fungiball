@@ -30,7 +30,7 @@ const tab = [
     {name : "Pierre Brill" ,poste : "Crypto Broker", img : guillaume, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/pierre-brill-036448b9"},
     {name : "Guillaume Franc" ,poste : "Advisor", img : pierre, twitter: "", Instagram: "", Linkedin: ""},
     {name : "Lucka Ndaye" ,poste : "Designer", img : designer, twitter: "", Instagram: "https://www.instagram.com/luckandaye/", Linkedin: ""},
-    {name : "VMS" ,poste : "Web development agency", img : vms, twitter: "", Instagram: "", Linkedin: ""},
+    {name : "VMS" ,poste : "Web3 Consulting Agency", img : vms, twitter: "", Instagram: "", Linkedin: ""},
 ]
 
 
@@ -150,7 +150,7 @@ export default class Team extends React.Component {
                             </div>
                             <div className='box-text-Team'>
                                 <h2>Virtual Miracle Studio</h2>
-                                <p>Web development agency</p>
+                                <p>Web3 Consulting Agency</p>
                             </div>
                             <div className='social-box'>
                                 <a href="#">LinkedIn</a>
