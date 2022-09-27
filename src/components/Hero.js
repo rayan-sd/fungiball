@@ -15,7 +15,7 @@ export default function Hero() {
                         <h2> <img alt='trophy' src={trophy}></img> Fungiball.io is the best Play to Earn</h2>
                         <h1>make it <span>yours</span></h1>
                         <p>Play with the reality of the game. FungiBall NFT cards are connected with reality, each card is connected to a <span className='weightt'>professional tennis player</span> and the value of this one is evolving according to the performance of the player.</p>
-                        <p>Mixe the skills of the best tennis player in the world, <span className='weightt'>create the ultimate tennis</span> player, participate to digital tournaments, and make profit!</p>
+                        <p>Mix the skills of the best tennis player in the world, <span className='weightt'>create the ultimate tennis</span> player, participate to digital tournaments, and make profit!</p>
                         <div className='box'>
                             <a href='https://discord.gg/9cWQE4f3'> GET STARTED</a>
                         </div>
