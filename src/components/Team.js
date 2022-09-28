@@ -23,9 +23,9 @@ import "swiper/css/navigation";
 
 const tab = [
     {name : "Victor Molette" ,poste : "Co-Founder & CEO", img : victor, twitter: "https://twitter.com/VictorMolette?s=20&t=UEoz5MEklIy_MYdOtKMWbw", Instagram: "https://www.instagram.com/victormolette/", Linkedin: "https://www.linkedin.com/in/victormolette"},
-    {name : "Jean Matias" ,poste : "Co-Founder & COO", img : jean, twitter: "https://twitter.com/JeanMAT39740767", Instagram: "https://www.instagram.com/joao_gmts/", Linkedin: ""},
+    {name : "Jean Matias" ,poste : "Co-Founder & Chairman", img : jean, twitter: "https://twitter.com/JeanMAT39740767", Instagram: "https://www.instagram.com/joao_gmts/", Linkedin: ""},
     {name : "E. Roger-Vasselin" ,poste : "Tennis Player", img : vasselin, twitter: "", Instagram: "https://www.instagram.com/edouardrogervasselin/", Linkedin: ""},
-    {name : "Antoine Pruvot" ,poste : "CFO & Advisor", img : antoine, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/antoine-pruvot-7876b1113"},
+    {name : "Antoine Pruvot" ,poste : "CFO Advisor", img : antoine, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/antoine-pruvot-7876b1113"},
     {name : "Alexandre Thevenet" ,poste : "Communication Director", img : alexandre, twitter: "", Instagram: "", Linkedin: ""},
     {name : "Pierre Brill" ,poste : "Crypto Broker", img : guillaume, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/pierre-brill-036448b9"},
     {name : "Guillaume Franc" ,poste : "Advisor", img : pierre, twitter: "", Instagram: "", Linkedin: ""},
@@ -68,7 +68,7 @@ export default class Team extends React.Component {
                             </div>
                             <div className='box-text-Team'>
                                 <h2> Jean Matias</h2>
-                                <p> Co-Founder & COO</p>
+                                <p> Co-Founder & Chairman</p>
                             </div>
                             <div className='social-box'>
                                 <a href="https://www.instagram.com/joao_gmts/">Instagram</a>
@@ -100,7 +100,7 @@ export default class Team extends React.Component {
                             </div>
                             <div className='social-box'>
                                 <a href="https://www.instagram.com/luckandaye/">Instagram</a>
-                                <a href="#">LinkedIn</a>
+                                <a>LinkedIn</a>
                             </div>
                         </div>
                         <div className='box-team'>
@@ -109,7 +109,7 @@ export default class Team extends React.Component {
                             </div>
                             <div className='box-text-Team'>
                                 <h2>Antoine Pruvot</h2>
-                                <p>CFO & Advisor</p>
+                                <p>CFO Advisor</p>
                             </div>
                             <div className='social-box'>
                                 <a href='https://www.linkedin.com/in/antoine-pruvot-7876b1113'>LinkedIn</a>
@@ -125,8 +125,8 @@ export default class Team extends React.Component {
                                 <p>Communication Director</p>
                             </div>
                             <div className='social-box'>
-                                <a href="#">LinkedIn</a>
-                                <a href="#">Twitter</a>
+                                <a>LinkedIn</a>
+                                <a>Twitter</a>
                             </div>
                         </div>
                     </div>
@@ -153,8 +153,8 @@ export default class Team extends React.Component {
                                 <p>Web3 Consulting Agency</p>
                             </div>
                             <div className='social-box'>
-                                <a href="#">LinkedIn</a>
-                                <a href="#">Twitter</a>
+                                <a>LinkedIn</a>
+                                <a href='https://www.vmstudio.xyz/'>Website</a>
                             </div>
                         </div>
                         <div className='box-team'>
@@ -166,8 +166,8 @@ export default class Team extends React.Component {
                                 <p>Advisor</p>
                             </div>
                             <div className='social-box'>
-                                <a href="#">LinkedIn</a>
-                                <a href="#">Twitter</a>
+                                <a>LinkedIn</a>
+                                <a>Twitter</a>
                             </div>
                         </div>
                     </div>

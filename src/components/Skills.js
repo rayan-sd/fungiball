@@ -14,7 +14,7 @@ export default function Skills() {
             <div className='title-skills'>
                 <h1>5 Fungiskills</h1>
                 <p>As we love to say, “Make it yours” </p>
-                <p>With the great diversity of FungiSkills available, will have the ability to design your own player while using the real statistics of the game.</p>
+                <p>With the great diversity of FungiSkills available, you will have the ability to design your own player while using the real statistics of the game.</p>
             </div>
 
             <div className='container-skils'>

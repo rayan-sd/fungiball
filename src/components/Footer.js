@@ -13,7 +13,7 @@ export default function Footer() {
                     <div className='box-t-left'>
                         <div className='text-footer'>
                             <h2>fungiballs</h2>
-                            <h3>© 2021 - <span>fungiballs</span></h3>
+                            <h3>© 2022 - <span>fungiball</span></h3>
                         </div>
                         <a href='https://discord.gg/9cWQE4f3'>Join Discord</a>
                     </div>

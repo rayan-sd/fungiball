@@ -145,7 +145,7 @@ export default function Roadmap() {
             {/* Roadmap-section */}
             <div className='box-title-Roadmap'>
                 <h1>The Roadmap</h1>
-                <p>The journey has only just begun, be the first to follow us and participate to rhe best play to earn game. Become the best fungiplayer and follow the steps of our project. Earn exclusive rewards by joining our discord !</p>
+                <p>The journey has only just begun, be the first to follow us and participate to the best play to earn game. Become the best fungiplayer and follow the steps of our project. Earn exclusive rewards by joining our discord !</p>
             </div>
             <div className='container-all'>
             <div className='container-Roadmap'>
@@ -214,7 +214,7 @@ export default function Roadmap() {
             </div>
             <div className='container-counter'>
                 <div className='box-counter stickybox'>
-                    <h3>Number of tennis players signed</h3>
+                    <h3>Number tennis players who joined us</h3>
                     <div className='counter'>
                         <div class="flip-clock-container">
                             <div class="flip-clock flip-clock-s">

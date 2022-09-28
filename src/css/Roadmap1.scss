@@ -88,7 +88,7 @@
                 align-items: center;
                 box-shadow: -6px 6px 28px rgba(0, 0, 0, 0.47), inset 0px -2.50245px 1.25122px rgba(255, 255, 255, 0.1);
                 backdrop-filter: blur(18.7684px);
-                padding: 0 20px;
+                padding: 0 1px;
                 gap: 30px;
                 /* Note: backdrop-filter has minimal browser support */
 
@@ -934,7 +934,7 @@
                     h3 {
                         font-size: 16px;
                         line-height: 26px;
-                        width: 75%;
+                        width: 80%;
                     }
                     .num {
                         font-size: 45px;

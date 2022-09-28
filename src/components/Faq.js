@@ -52,7 +52,7 @@ export default function Faq() {
                                 <a href='#question3'>HOW WORKS THE ROYALTIES ?</a>
                                 <div>{(click === 3) ? <BiChevronUp className="i-active" /> : <BiChevronDown className="i-remove" />}</div>
                             </div>
-                            <div className='answer'>The first owner of a card will receive 1,6% of the revenue of the sales each time the card is sold in the secondary market.</div>
+                            <div className='answer'>The first owner of a card will receive 0,5% of the revenue of the sales each time the card is sold in the secondary market.</div>
                         </div>
                         <div className={(click === 4) ? 'accordium-item-active' : 'accordium-item'} id='question4'>
                             <div className='container-accordium' onClick={() => handleClick(4)}>
