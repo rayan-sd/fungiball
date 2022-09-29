@@ -64,9 +64,9 @@ export default function Navbar() {
                         {/* <a href='#' className='mnu'> White Paper</a> */}
                         <div className='blur-nav'></div>
                         <div className='social-nav'>
-                            <a href='https://discord.gg/9cWQE4f3'><FaDiscord className='icon'/></a>
-                            <a href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><BsTwitter className='icon'/></a>
-                            <a href='https://www.instagram.com/fungiball.io/'><BsInstagram className='icon'/></a>
+                            <a target='_blank'  href='https://discord.gg/9cWQE4f3'><FaDiscord className='icon'/></a>
+                            <a target='_blank' href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><BsTwitter className='icon'/></a>
+                            <a target='_blank' href='https://www.instagram.com/fungiball.io/'><BsInstagram className='icon'/></a>
                         </div>
                     </div>
                 </div>
