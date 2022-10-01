@@ -44,7 +44,7 @@ export default function Series() {
                                 <p>As you already know we have developed 5 categories of NFTs (FungiSkills) based on real tennis players statistics. Each of them is marked from 0 to 100 points.
                                     Well what you only need to do is to gather what you believe will be FungiSkill of each category for the next digitevent so your FungiPlayer will be the best and will make you earn a lot.</p>
                                 <div className='box-button'>
-                                    <a href='https://discord.gg/9cWQE4f3'>LEARN MORE</a>
+                                    <a href='https://discord.gg/JeCaNyf74y'>LEARN MORE</a>
                                 </div>                                   
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function Series() {
                                 <p>Your FungiPlayer is the digital tennis player that you will use to participate to all the digitevent that will happen on FungiBall. he or she will be your avatar in the digital world of Tennis, so take care of it !</p>
                                 <p>The FungPlayer needs to be equipped with the 5 FungiSkills in order to be able to play Tennis, so as you understand, the better are your Skills the better will be your Player and so your rank in the competition.</p>
                                 <div className='box-button p2'>
-                                    <a href='https://discord.gg/9cWQE4f3'>JOIN DISCORD</a>
+                                    <a href='https://discord.gg/JeCaNyf74y'>JOIN DISCORD</a>
                                 </div>                                 
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export default function Series() {
 Then, Top players gets rewarded in ETH, NFT cards and others special prizes according to their performances.</p>
                                 <p>See more detail in the REWARD section.</p>
                                 <div className='box-button'>
-                                    <a href='https://discord.gg/9cWQE4f3'>GET STARTED</a>
+                                    <a href='https://discord.gg/JeCaNyf74y'>GET STARTED</a>
                                 </div>
                             </div>
                         </div>
