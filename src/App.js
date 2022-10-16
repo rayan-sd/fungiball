@@ -10,6 +10,11 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 function App() {
+
+  const dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-245796793-1');
   return (
     <div className="App">
       {/* <header className="App-header"> */}
