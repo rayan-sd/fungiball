@@ -118,16 +118,57 @@
     src: url("./../Font/Sora-Regular.ttf") format("truetype"),
   }
 
+  @media only screen and (max-width: 1100px) {
+    .Navbar {
+        .menu-nav {
+            width: 95%;
+
+            .left-icon {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .right-text {
+                display: flex;
+                gap: 50px;
+
+                .mnu-left {
+                    display: flex;
+                    gap: 12px;
+                }
+                    a {
+                        font-family: 'Nordique Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
+            }
+        }
+    }
+}
+
   @media only screen and (max-width: 900px) {
     .Navbar {     
         position: fixed;
         z-index: 120;
+        
         .menu-nav {
+            width: 90%;
+            .left-icon {
+                img {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+
             .menu-icon {
                 display: unset;  
                 display: block;
                 position: relative;
-                // transform: translate(-100%, 60%);
                 font-size: 1.8rem;
                 height: 100%;
                 cursor: pointer;

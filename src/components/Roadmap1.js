@@ -7,16 +7,6 @@ import Clock from "react-flip-clock-count-down";
 export default function Roadmap() {
     const [time, setTime] = useState(0);
     const [scroll, setScroll] = useState(false);
-    // const date = new Date();
-    //         const now = {
-    //           s: date.getSeconds(),
-    //         };
-    // setTimeout(settime, 600);
-    // function settime() {
-    //     if (scroll) {
-    //         setTime(time + 1)
-    //     }
-    // }
     window.addEventListener('scroll', function(e) { 
         console.log(window.scrollY);
         if (window.scrollY >= 5200) {
@@ -56,14 +46,6 @@ export default function Roadmap() {
                 document.getElementsByClassName('back-color6')[0].style.width = "100%"
             }
         }
-
-        // this.document.getElementsByClassName('box-counter')[0].style.position = 'sticky'
-        // this.document.getElementsByClassName('box-counter')[0].style.top = '100px'
-
-
-        // if (this.document.getElementsByClassName('Team') === true) {
-        //     this.document.getElementsByClassName('box-counter')[0].style.display = 'none'
-        // }
     })
     
     function initElements() {

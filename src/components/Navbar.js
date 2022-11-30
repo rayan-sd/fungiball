@@ -59,9 +59,9 @@ export default function Navbar() {
                         e.preventDefault();  // Stop Page Reloading
                         hero && hero.scrollIntoView({behavior: "smooth"});
                         }}> FAQ</a>
+                        <a target='_blank' href='https://docdro.id/6pBPFPo' className='mnu'> White Paper</a>
                         </div>
 
-                        {/* <a href='#' className='mnu'> White Paper</a> */}
                         <div className='blur-nav'></div>
                         <div className='social-nav'>
                             <a target='_blank'  href='https://discord.gg/JeCaNyf74y'><FaDiscord className='icon'/></a>

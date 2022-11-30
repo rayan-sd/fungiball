@@ -22,8 +22,8 @@ import "swiper/css/navigation";
 
 
 const tab = [
-    {name : "Victor Molette" ,poste : "Co-Founder & CEO", img : victor, twitter: "https://twitter.com/VictorMolette?s=20&t=UEoz5MEklIy_MYdOtKMWbw", Instagram: "https://www.instagram.com/victormolette/", Linkedin: "https://www.linkedin.com/in/victormolette"},
-    {name : "Jean Matias" ,poste : "Co-Founder & Chairman", img : jean, twitter: "https://twitter.com/JeanMAT39740767", Instagram: "https://www.instagram.com/joao_gmts/", Linkedin: ""},
+    // {name : "Victor Molette" ,poste : "Co-Founder & CEO", img : victor, twitter: "https://twitter.com/VictorMolette?s=20&t=UEoz5MEklIy_MYdOtKMWbw", Instagram: "https://www.instagram.com/victormolette/", Linkedin: "https://www.linkedin.com/in/victormolette"},
+    {name : "Jean Matias" ,poste : "Founder & CEO", img : jean, twitter: "https://twitter.com/JeanMAT39740767", Instagram: "https://www.instagram.com/joao_gmts/", Linkedin: ""},
     {name : "E. Roger-Vasselin" ,poste : "Tennis Player", img : vasselin, twitter: "", Instagram: "https://www.instagram.com/edouardrogervasselin/", Linkedin: ""},
     {name : "Antoine Pruvot" ,poste : "CFO Advisor", img : antoine, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/antoine-pruvot-7876b1113"},
     {name : "Alexandre Thevenet" ,poste : "Communication Director", img : alexandre, twitter: "", Instagram: "", Linkedin: ""},
@@ -49,7 +49,7 @@ export default class Team extends React.Component {
                 <div className='container-team'>
                     <div className='blur-team'></div>
                     <div className='box-top-team'>
-                        <div className='box-team'>
+                        {/* <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={victor}></img>
                             </div>
@@ -61,14 +61,14 @@ export default class Team extends React.Component {
                                 <a href='https://www.linkedin.com/in/victormolette'>LinkedIn</a>
                                 <a href='https://twitter.com/VictorMolette?s=20&t=UEoz5MEklIy_MYdOtKMWbw'>Twitter</a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='box-team'>
                             <div className="box-img-team">
                                 <img alt='team1' src={jean}></img>
                             </div>
                             <div className='box-text-Team'>
                                 <h2> Jean Matias</h2>
-                                <p> Co-Founder & Chairman</p>
+                                <p> Founder & CEO</p>
                             </div>
                             <div className='social-box'>
                                 <a href="https://www.instagram.com/joao_gmts/">Instagram</a>
