@@ -60,7 +60,7 @@ export default function Footer() {
                                 e.preventDefault();  // Stop Page Reloading
                                 hero && hero.scrollIntoView({ behavior: "smooth" });
                             }}> FAQ</a>
-                            <a>White Paper coming soon</a>
+                            <a target='_blank' href='https://docdro.id/6pBPFPo'> White Paper</a>
                             </div>
                         </div>
                     </div>
