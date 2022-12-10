@@ -68,7 +68,7 @@ export default function Footer() {
                         <div className='gp'>
                             <h2>Contact</h2>
                             <div className='contact-footer'>
-                                <a href='https://discord.gg/9cWQE4f3'><FaDiscord className='icon'/></a>
+                                <a href='https://discord.gg/6QsBQ2KDP7'><FaDiscord className='icon'/></a>
                                 <a href='https://twitter.com/Fungiball_off?s=20&t=7oX62YYsQA4UYdywwqc-Lg'><BsTwitter className='icon'/></a>
                                 <a href='https://www.instagram.com/fungiball.io/'><BsInstagram className='icon'/></a>
                             </div>

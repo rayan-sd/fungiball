@@ -59,7 +59,7 @@ export default function Series() {
                                 <p>Your FungiPlayer is the digital tennis player that you will use to participate to all the digitevent that will happen on FungiBall. he or she will be your avatar in the digital world of Tennis, so take care of it !</p>
                                 <p>The FungPlayer needs to be equipped with the 5 FungiSkills in order to be able to play Tennis, so as you understand, the better are your Skills the better will be your Player and so your rank in the competition.</p>
                                 <div className='box-button p2'>
-                                    <a target='_blank' href='https://discord.gg/JeCaNyf74y'>JOIN DISCORD</a>
+                                    <a target='_blank' href='https://discord.gg/6QsBQ2KDP7'>JOIN DISCORD</a>
                                 </div>                                 
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export default function Series() {
 Then, Top players gets rewarded in ETH, NFT cards and others special prizes according to their performances.</p>
                                 <p>See more detail in the REWARD section.</p>
                                 <div className='box-button'>
-                                    <a target='_blank' href='https://discord.gg/JeCaNyf74y'>GET STARTED</a>
+                                    <a target='_blank' href='https://discord.gg/6QsBQ2KDP7'>GET STARTED</a>
                                 </div>
                             </div>
                         </div>
