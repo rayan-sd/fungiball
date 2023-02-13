@@ -1,7 +1,5 @@
 import React from 'react'
 import "./../css/Teams.scss"
-
-import victor from "./../img/TEAM/victor.png"
 import jean from "./../img/TEAM/jean.png"
 import vasselin from "./../img/TEAM/vasselin1.png"
 import alexandre from "./../img/TEAM/alexandre1.png"
