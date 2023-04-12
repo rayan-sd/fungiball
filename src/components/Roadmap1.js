@@ -1,8 +1,5 @@
-import React, { useEffect, useState} from 'react'
-// import edouard from './../img/Edouard.png'
+import React, { useState} from 'react'
 import "./../css/Roadmap1.scss"
-// import roadmap from "./../img/roadmap.png"
-import Clock from "react-flip-clock-count-down";
 
 export default function Roadmap() {
     const [time, setTime] = useState(0);

@@ -148,6 +148,10 @@
             display: none;
         }
 
+        .swiper-wrapper {
+            align-items: baseline;
+        }
+
         .container-team-mobile {
             width: 100%;
             display: flex;
@@ -232,6 +236,10 @@
                             -webkit-text-fill-color: transparent;
                             background-clip: text;
                             text-fill-color: transparent;
+                        }
+
+                        .transparent {
+                            background: transparent;
                         }
                     }
                 }
