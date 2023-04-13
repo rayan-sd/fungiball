@@ -25,8 +25,8 @@ const tab = [
     {name : "E. Roger-Vasselin" ,poste : "Tennis Player", img : vasselin, twitter: "https://twitter.com/ERogerVasselin", Instagram: "https://www.instagram.com/edouardrogervasselin/", Linkedin: ""},
     {name : "Antoine Pruvot" ,poste : "CFO Advisor", img : antoine, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/antoine-pruvot-7876b1113"},
     {name : "Alexandre Thevenet" ,poste : "Communication Director", img : alexandre, twitter: "", Instagram: "", Linkedin: ""},
-    {name : "Pierre Brill" ,poste : "Crypto Broker", img : guillaume, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/pierre-brill-036448b9"},
-    {name : "Guillaume Franc" ,poste : "Advisor", img : pierre, twitter: "", Instagram: "", Linkedin: ""},
+    {name : "Pierre Brill" ,poste : "Crypto Broker", img : pierre, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/in/pierre-brill-036448b9"},
+    {name : "Guillaume Franc" ,poste : "Advisor", img : guillaume, twitter: "", Instagram: "", Linkedin: ""},
     {name : "Lucka Ndaye" ,poste : "Designer", img : designer, twitter: "", Instagram: "https://www.instagram.com/luckandaye/", Linkedin: ""},
     {name : "VMS" ,poste : "Web3 Consulting Agency", img : vms, twitter: "", Instagram: "", Linkedin: "https://www.linkedin.com/company/virtual-miracle-studio/"},
 ]
@@ -147,8 +147,6 @@ export default class Team extends React.Component {
                                 <p>Advisor</p>
                             </div>
                             <div className='social-box'>
-                                <a>LinkedIn</a>
-                                <a>Twitter</a>
                             </div>
                         </div>
                     </div>
