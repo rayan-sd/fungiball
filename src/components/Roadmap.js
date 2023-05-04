@@ -170,7 +170,7 @@ export default function Roadmap() {
                     <div className='counter'>
                     {/* <Clock endTime={360000} /> */}
                     {/* <FlipClockCountdown to={-36000000000000} /> */}
-                        { compteur()}
+                        {/* { compteur()} */}
                         {/* <div className='digit' data-digit-before="0" data-digit-after="1">
                             <div className='card' className={isActive ? "card flipped" : "card"} onClick={handleToggle}>
                                 <div className='card-face card-face-front'>0</div>

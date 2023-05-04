@@ -56,19 +56,26 @@ export default function Roadmap() {
 
         el = els[0];
         el.digit = target.querySelector('.digit-left');
+        if (!el.digit) return els;
         el.card = el.digit.querySelector('.card');
+        if (!el.card)
+            return els
         el.cardFaces = el.card.querySelectorAll('.card-face');
         el.cardFaceA = el.cardFaces[0];
         el.cardFaceB = el.cardFaces[1];
 
         el = els[1];
         el.digit = target.querySelector('.digit-right');
+        if (!el.digit) return els;
         el.card = el.digit.querySelector('.card');
+        if (!el.card)
+            return els
         el.cardFaces = el.card.querySelectorAll('.card-face');
         el.cardFaceA = el.cardFaces[0];
         el.cardFaceB = el.cardFaces[1];
         return els;
     }
+
     function runClock() {
         if (!document.hidden && scroll) {
             const now = {
@@ -85,36 +92,26 @@ export default function Roadmap() {
                     if (i === '0') next = next <= 3 ? `${next}` : '0';
                     if (i === '1') next = next <= 9 ? `${next}` : '0';
 
-                    const el = initElements('s')[i];
-                    if (el && el.digit) {
+                    const el = initElements()[i];
+                    if (el && el.digit && el.card) {
                         if (!el.digit.dataset.digitBefore) {
                             el.digit.dataset.digitBefore = curr;
                             el.cardFaceA.textContent = el.digit.dataset.digitBefore;
                             el.digit.dataset.digitAfter = next;
                             el.cardFaceB.textContent = el.digit.dataset.digitAfter;
-                        } else if (el.digit.dataset.digitBefore !== curr) {
+                        } 
+                        else if (el.digit.dataset.digitBefore !== curr) {
                             el.card.addEventListener('transitionend', function () {
                                 el.digit.dataset.digitBefore = curr;
                                 el.cardFaceA.textContent = el.digit.dataset.digitBefore;
-
-                                // const cardClone = el.card.cloneNode(true);
-                                // cardClone.classList.remove('flipped');
-                                // el.digit.replaceChild(cardClone, el.card);
-                                // el.card = cardClone;
                                 if (el.digit.contains(el.card)) {
-                                    el.digit.removeChild(el.card);
-                                  }
-                                const cardClone = el.card.cloneNode(true);
-                                cardClone.classList.remove('flipped');
-                                el.digit.replaceChild(cardClone, el.card);
-                                el.card = cardClone;
-
-                                el.cardFaces = el.card.querySelectorAll('.card-face');
-                                el.cardFaceA = el.cardFaces[0];
-                                el.cardFaceB = el.cardFaces[1];
-
-                                el.digit.dataset.digitAfter = next;
-                                el.cardFaceB.textContent = el.digit.dataset.digitAfter;
+                                    const cardClone = el.card.cloneNode(true);
+                                    cardClone.classList.remove('flipped');
+                                    el.digit.replaceChild(cardClone, el.card);
+                                    el.card = cardClone;
+                                    el.digit.dataset.digitAfter = next;
+                                    el.cardFaceB.textContent = el.digit.dataset.digitAfter;
+                                }
                             }, { once: true });
                             if (!el.card.classList.contains('flipped')) {
                                 el.card.classList.add('flipped');
@@ -125,18 +122,17 @@ export default function Roadmap() {
             setTime(time + 1)
         }
     }
-    setTimeout(runClock, 300);
+    
+    setTimeout(runClock, 1000);
 
     return (
         <section className='Roadmap' id='Roadmap'>
-            {/* Roadmap-section */}
             <div className='box-title-Roadmap'>
                 <h1>The Roadmap</h1>
                 <p>The journey has only just begun, be the first to follow us and participate to the best play to earn game. Become the best fungiplayer and follow the steps of our project. Earn exclusive rewards by joining our discord !</p>
             </div>
             <div className='container-all'>
                 <div className='container-Roadmap'>
-                    {/* <img alt='roadmap' src={roadmap}></img> */}
                     <div className='l1'>
                         <div className='case'>
                             <div className='back-color'></div>
